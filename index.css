@@ -1,173 +1,226 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Barlow Condensed", sans-serif;
-}
-
-.wrapper {
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(134.34% 134.34%at 50% 0%, #1f3757 0%, #131537 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.scoreboard {
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #8fbbf5;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-top: 30px;
-    height: 90px;
-}
-
-.title img {
-    width: 90px;
-}
-
-.score {
-    width: 80px;
-    height: 60px;
-    border: white;
-    background-color: white;
-    border-radius: 6px;
-}
-
-p {
-    color: darkblue;
-    font-family: Barlow;
-    text-align: center;
-    font-size: 20px;
-}
-
-h1 {
-    color: black;
-    text-align: center;
-}
-
-.hands {
-    background-image: url("bg-triangle.svg");
-    background-repeat: no-repeat;
-    width: 280px;
-    height: 220px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 80px;
-    background-position: center;
-}
-
-.hands .hand {
-    cursor: pointer;
-    transition: all 0.25s;
-}
-
-.hands .hand:hover {
-    transform: translate3d(0px, -8px, 0px);
-}
-
-.paper {
-    height: 90px;
-    width: 100px;
-    padding: 0.7rem 1rem;
-    border-radius: 50%;
-    background-color: white;
-    border: 10px solid blue;
-    margin-right: 6px;
-}
-
-.scissors {
-    height: 85px;
-    width: 95px;
-    padding: 0.7rem 1rem;
-    border-radius: 50%;
-    background-color: white;
-    border: 10px solid yellow;
-    margin-left: 19px;
-}
-
-.rock {
-    height: 85px;
-    width: 95px;
-    padding: 0.7rem 1rem;
-    border-radius: 50%;
-    background-color: white;
-    border: 10px solid red;
-    box-shadow: #131537;
-    margin-bottom: 15px;
-}
-
-@media only screen and (min-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Barlow Condensed", sans-serif;
+    }
+    
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(134.34% 134.34%at 50% 0%, #1f3757 0%, #131537 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .scoreboard {
-        width: 600px;
+        width: 280px;
         display: flex;
         justify-content: space-between;
         border: 2px solid #8fbbf5;
         border-radius: 10px;
-        padding: 2rem;
+        padding: 1rem;
         margin-top: 30px;
-        height: 150px;
+        height: 90px;
     }
+    
     .title img {
-        width: 150px;
-        margin-top: 0.2rem;
+        width: 90px;
     }
+    
     .score {
-        width: 100px;
-        height: 80px;
+        width: 80px;
+        height: 60px;
         border: white;
         background-color: white;
         border-radius: 6px;
     }
+    
     p {
         color: darkblue;
         font-family: Barlow;
         text-align: center;
         font-size: 20px;
-        margin-top: 0.7rem;
     }
+    
+    h1 {
+        color: black;
+        text-align: center;
+    }
+    
     .hands {
-        background-image: url("bg-triangle.svg");
         background-repeat: no-repeat;
-        width: 470px;
-        height: 370px;
+        width: 280px;
+        height: 220px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 80px;
-        background-position: center;
+        margin-top: 90px;
     }
+    
+    .hands .hand {
+        cursor: pointer;
+        transition: all 0.25s;
+    }
+    
+    .hands .hand:hover {
+        transform: translate3d(0px, -8px, 0px);
+    }
+    
     .paper {
-        height: 140px;
-        width: 140px;
-        padding: 2rem 2rem;
+        height: 90px;
+        width: 100px;
+        padding: 0.7rem 1rem;
         border-radius: 50%;
         background-color: white;
-        border: 15px solid blue;
-        margin-left: 25px;
+        border: 10px solid blue;
+        margin-right: 6px;
     }
+    
     .scissors {
-        height: 140px;
-        width: 140px;
-        padding: 2rem 2rem;
+        height: 85px;
+        width: 95px;
+        padding: 0.7rem 1rem;
         border-radius: 50%;
         background-color: white;
-        border: 15px solid yellow;
-        margin-right: 25px;
+        border: 10px solid yellow;
+        margin-left: 19px;
     }
+    
     .rock {
-        height: 140px;
-        width: 140px;
-        padding: 2rem 2rem;
+        height: 85px;
+        width: 95px;
+        padding: 0.7rem 1rem;
         border-radius: 50%;
         background-color: white;
-        border: 15px solid red;
+        border: 10px solid red;
+        box-shadow: #131537;
+        margin-bottom: 15px;
     }
-}
+    
+    .contest {
+        width: 340px;
+        height: 100px;
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .handImageContainer {
+        height: 110px;
+        width: 120px;
+        padding: 1rem 1.8rem;
+        border-radius: 50%;
+        background-color: white;
+        border: 10px solid blue;
+        /* margin-left: 0.3rem; */
+    }
+    
+    .contest>div {
+        flex: 1;
+    }
+    
+    .contest h1 {
+        color: white;
+        font-size: 12px;
+        font-family: Barlow;
+        margin-bottom: 30px;
+    }
+    
+    .referee .decision h1 {
+        margin-top: 13rem;
+    }
+    
+    .referee .newGame h1 {
+        margin-top: 2rem;
+        height: 50px;
+        width: 100px;
+        background-color: white;
+        border: white;
+        color: #131537;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .scoreboard {
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid #8fbbf5;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 30px;
+            height: 150px;
+        }
+        .title img {
+            width: 150px;
+            margin-top: 0.2rem;
+        }
+        .score {
+            width: 100px;
+            height: 80px;
+            border: white;
+            background-color: white;
+            border-radius: 6px;
+        }
+        p {
+            color: darkblue;
+            font-family: Barlow;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 0.7rem;
+        }
+        .hands {
+            background-image: url("bg-triangle.svg");
+            background-repeat: no-repeat;
+            width: 470px;
+            height: 370px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 80px;
+            background-position: center;
+        }
+        .paper {
+            height: 140px;
+            width: 140px;
+            padding: 2rem 2rem;
+            border-radius: 50%;
+            background-color: white;
+            border: 15px solid blue;
+            margin-left: 25px;
+        }
+        .scissors {
+            height: 140px;
+            width: 140px;
+            padding: 2rem 2rem;
+            border-radius: 50%;
+            background-color: white;
+            border: 15px solid yellow;
+            margin-right: 25px;
+        }
+        .rock {
+            height: 140px;
+            width: 140px;
+            padding: 2rem 2rem;
+            border-radius: 50%;
+            background-color: white;
+            border: 15px solid red;
+        }
+        .handImageContainer {
+            height: 110px;
+            width: 120px;
+            padding: 1rem 1.8rem;
+            border-radius: 50%;
+            background-color: white;
+            border: 10px solid blue;
+            margin-left: 0.9rem;
+        }
+        .referee .decision h1 {
+            margin-top: 0rem;
+        }
+    }

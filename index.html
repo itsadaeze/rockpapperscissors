@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Fraunces:opsz@9..144&family=Inter&family=Lexend+Deca&family=Manrope:wght@800&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 
@@ -24,17 +25,40 @@
         </div>
         <div class="hands">
             <div class=" hand paper">
-                <img src="icon-paper.svg" width="40px">
+                <img src="icon-paper.svg" width="40px" onclick="pickUserHand('paper')">
             </div>
-            <div class=" hand scissors">
-                <img src="icon-scissors.svg" width="40px">
+            <div class=" hand scissors ">
+                <img src="icon-scissors.svg " width="40px" onclick="pickUserHand('scissors')">
             </div>
-            <div class=" hand rock">
-                <img src="icon-rock.svg" width="40px">
+            <div class=" hand rock ">
+                <img src="icon-rock.svg " width="40px" onclick="pickUserHand('rock')">
             </div>
 
         </div>
+        <div class="contest">
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="handImageContainer">
+                    <img src="icon-paper.svg" width="40px">
+                </div>
+            </div>
+            <div class="referee">
+                <div class="decision">
+                    <h1>YOU WIN</h1>
+                </div>
+                <div class="newGame">
+                    <h1>PLAY AGAIN</h1>
+                </div>
+            </div>
+            <div class="computerhand">
+                <h1>THE HOUSE PICKED</h1>
+                <div class="handImageContainer">
+                    <img src="icon-paper.svg" width="40px">
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
